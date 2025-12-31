@@ -615,11 +615,14 @@
     align-items: center;
     z-index: 1000;
     animation: introFadeOut 3s ease-in-out forwards;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
   }
 
   .intro-title {
     font-family: 'Righteous', cursive;
-    font-size: clamp(2em, 8vw, 4em);
+    font-size: clamp(1.5em, 6vw, 3em);
     background: linear-gradient(45deg, #ff6b9d, #feca57, #48dbfb, #ff9ff3);
     background-size: 300% 300%;
     -webkit-background-clip: text;
@@ -628,11 +631,12 @@
     animation: gradientShift 3s ease infinite, introPulse 2s ease-in-out infinite;
     text-shadow: 0 0 50px rgba(255,107,157,0.8);
     margin-bottom: 20px;
+    word-wrap: break-word;
   }
 
   .intro-subtitle {
     font-family: 'Caveat', cursive;
-    font-size: clamp(1em, 4vw, 2em);
+    font-size: clamp(0.8em, 3vw, 1.5em);
     color: #feca57;
     animation: introPulse 2s ease-in-out infinite;
     text-shadow: 0 0 20px rgba(254,202,87,0.8);
@@ -736,6 +740,57 @@
       padding: 8px 15px;
       font-size: 0.8em;
     }
+
+    .hints-popup, .reflect-popup {
+      padding: 20px;
+      max-width: 95%;
+      width: 95%;
+    }
+
+    .hints-content h3, .reflect-content h3 {
+      font-size: 1.2em;
+    }
+
+    .hints-content p, .reflect-content p {
+      font-size: 0.9em;
+    }
+
+    .hints-content li {
+      font-size: 0.8em;
+    }
+
+    .close-btn {
+      font-size: 50px;
+      top: 10px;
+      right: 15px;
+    }
+
+    .reflect-content textarea {
+      height: 120px;
+      font-size: 0.9em;
+    }
+
+    .reflect-content button {
+      padding: 8px 15px;
+      font-size: 0.8em;
+    }
+
+    .close-popup-btn {
+      padding: 8px 15px;
+      font-size: 0.8em;
+    }
+
+    .game-board {
+      grid-template-columns: repeat(4, 60px);
+      grid-template-rows: repeat(4, 60px);
+      gap: 5px;
+    }
+
+    .card {
+      width: 60px;
+      height: 60px;
+      font-size: 1.5em;
+    }
   }
 
   .hints-popup, .reflect-popup {
@@ -751,6 +806,9 @@
     display: none;
     animation: modalSlideIn 0.5s;
     max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
     text-align: center;
     border: 3px solid #ff6b9d;
   }
