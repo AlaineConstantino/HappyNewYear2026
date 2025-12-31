@@ -85,7 +85,7 @@
   
   h1 {
     font-family: 'Righteous', cursive;
-    font-size: clamp(2em, 6vw, 4em);
+    font-size: clamp(1.5em, 5vw, 3.5em);
     background: linear-gradient(45deg, #ff6b9d, #feca57, #48dbfb, #ff9ff3, #ff6b9d);
     background-size: 300% 300%;
     -webkit-background-clip: text;
@@ -103,7 +103,7 @@
   
   .subtitle {
     font-family: 'Caveat', cursive;
-    font-size: clamp(1.2em, 4vw, 1.8em);
+    font-size: clamp(1em, 4vw, 1.8em);
     color: #feca57;
     animation: pulse 2s ease-in-out infinite;
     text-shadow: 0 0 10px rgba(254,202,87,0.8);
@@ -525,12 +525,12 @@
         gap: 15px;
         padding: 20px;
       }
-      
+
       .keypad {
         grid-template-columns: repeat(3, 70px);
         gap: 10px;
       }
-      
+
       .keypad button {
         width: 70px;
         height: 70px;
@@ -619,7 +619,7 @@
 
   .intro-title {
     font-family: 'Righteous', cursive;
-    font-size: clamp(3em, 10vw, 6em);
+    font-size: clamp(2em, 8vw, 4em);
     background: linear-gradient(45deg, #ff6b9d, #feca57, #48dbfb, #ff9ff3);
     background-size: 300% 300%;
     -webkit-background-clip: text;
@@ -632,7 +632,7 @@
 
   .intro-subtitle {
     font-family: 'Caveat', cursive;
-    font-size: clamp(1.5em, 5vw, 2.5em);
+    font-size: clamp(1em, 4vw, 2em);
     color: #feca57;
     animation: introPulse 2s ease-in-out infinite;
     text-shadow: 0 0 20px rgba(254,202,87,0.8);
@@ -651,8 +651,8 @@
 
   @media (max-width: 480px) {
     .vault-container {
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 8px;
       padding: 15px;
     }
 
@@ -676,6 +676,65 @@
     .hint-btn {
       padding: 8px 16px;
       font-size: 0.9em;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .vault-container {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      gap: 5px;
+      padding: 10px;
+    }
+
+    .vault {
+      padding: 20px 10px;
+    }
+
+    .vault-emoji {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .vault-title {
+      font-size: 1.1em;
+    }
+
+    .keypad {
+      grid-template-columns: repeat(3, 50px);
+      gap: 5px;
+    }
+
+    .keypad button {
+      width: 50px;
+      height: 50px;
+      font-size: 16px;
+    }
+
+    #overlay {
+      padding: 10px;
+    }
+
+    .modal-content {
+      max-width: 90%;
+    }
+
+    #vaultTitle {
+      font-size: 2em;
+    }
+
+    #message {
+      font-size: 0.9em;
+      padding: 15px;
+    }
+
+    .unlock-btn {
+      padding: 10px 20px;
+      font-size: 0.9em;
+    }
+
+    .hint-btn, .surprise-btn {
+      padding: 8px 15px;
+      font-size: 0.8em;
     }
   }
 
