@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>✨ Secret New Year Vaults 2026 🎆</title>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Caveat:wght@700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0a0e27;
+    overflow-x: hidden;
+    color: #fff;
+    position: relative;
+  }
+  
+  .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle 3s infinite;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.5); }
+  }
+  
+  .particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(45deg, #ff6b9d, #feca57, #48dbfb, #ff9ff3);
+    border-radius: 50%;
+    animation: float 15s infinite;
+    opacity: 0.6;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.6; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+  }
+  
+  header {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    padding: 40px 20px 20px;
+    background: linear-gradient(180deg, rgba(255,107,157,0.2) 0%, transparent 100%);
+    animation: headerSlideIn 1s ease-out 3s forwards;
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  
+  @keyframes headerSlideIn {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  h1 {
+    font-family: 'Righteous', cursive;
+    font-size: clamp(2em, 6vw, 4em);
+    background: linear-gradient(45deg, #ff6b9d, #feca57, #48dbfb, #ff9ff3, #ff6b9d);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 5s ease infinite;
+    text-shadow: 0 0 30px rgba(255,107,157,0.5);
+    margin-bottom: 10px;
+  }
+  
+  @keyframes gradientShift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  .subtitle {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(1.2em, 4vw, 1.8em);
+    color: #feca57;
+    animation: pulse 2s ease-in-out infinite;
+    text-shadow: 0 0 10px rgba(254,202,87,0.8);
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+  
+  .vault-container {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    animation: vaultReveal 2s ease-out;
+  }
+
+  @keyframes vaultReveal {
+    0% { opacity: 0; transform: translateY(50px) scale(0.9); }
+    50% { opacity: 0.5; transform: translateY(25px) scale(0.95); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  
+  .vault {
+    position: relative;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+    padding: 30px 20px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: vaultBounceIn 0.8s ease-out forwards;
+  }
+
+  .vault:nth-child(1) { animation-delay: 0.1s; }
+  .vault:nth-child(2) { animation-delay: 0.2s; }
+  .vault:nth-child(3) { animation-delay: 0.3s; }
+  .vault:nth-child(4) { animation-delay: 0.4s; }
+  .vault:nth-child(5) { animation-delay: 0.5s; }
+  .vault:nth-child(6) { animation-delay: 0.6s; }
+  .vault:nth-child(7) { animation-delay: 0.7s; }
+  .vault:nth-child(8) { animation-delay: 0.8s; }
+  .vault:nth-child(9) { animation-delay: 0.9s; }
+  .vault:nth-child(10) { animation-delay: 1.0s; }
+  .vault:nth-child(11) { animation-delay: 1.1s; }
+  .vault:nth-child(12) { animation-delay: 1.2s; }
+  .vault:nth-child(13) { animation-delay: 1.3s; }
+  .vault:nth-child(14) { animation-delay: 1.4s; }
+
+  @keyframes vaultBounceIn {
+    0% { opacity: 0; transform: translateY(30px) scale(0.8); }
+    60% { opacity: 1; transform: translateY(-10px) scale(1.05); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+  }
+  
+  .vault::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,107,157,0.3), transparent);
+    transform: rotate(45deg);
+    transition: all 0.6s;
+  }
+  
+  .vault:hover::before {
+    animation: shine 1.5s infinite;
+  }
+  
+  @keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+  }
+  
+  .vault:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-color: #ff6b9d;
+    box-shadow: 0 15px 50px rgba(255,107,157,0.4), 0 0 30px rgba(255,107,157,0.3);
+  }
+  
+  .vault-emoji {
+    font-size: 3.5em;
+    display: block;
+    margin-bottom: 15px;
+    animation: bounce 2s ease-in-out infinite;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+  
+  .vault:hover .vault-emoji {
+    animation: spin 0.6s ease;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
+  }
+  
+  .vault-title {
+    font-family: 'Righteous', cursive;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 1;
+  }
+  
+  #overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10,14,39,0.98);
+    backdrop-filter: blur(20px);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .modal-content {
+    max-width: 700px;
+    width: 100%;
+    animation: modalSlideIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  @keyframes modalSlideIn {
+    0% { opacity: 0; transform: scale(0.8) translateY(50px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: #ff6b9d;
+    cursor: pointer;
+    transition: all 0.3s;
+    z-index: 1001;
+    text-shadow: 0 0 10px rgba(255,107,157,0.8);
+  }
+  
+  .close-btn:hover {
+    transform: rotate(90deg) scale(1.2);
+    color: #feca57;
+  }
+  
+  #vaultTitle {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff6b9d, #feca57);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  #gif {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 10px 40px rgba(255,107,157,0.3);
+    border: 3px solid rgba(255,107,157,0.3);
+  }
+  
+  #passcodeInput {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,107,157,0.5);
+    border-radius: 15px;
+    color: #fff;
+    letter-spacing: 8px;
+    font-weight: 600;
+    margin: 20px auto;
+    display: block;
+    transition: all 0.3s;
+  }
+  
+  #passcodeInput:focus {
+    outline: none;
+    border-color: #ff6b9d;
+    box-shadow: 0 0 20px rgba(255,107,157,0.5);
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 15px;
+    justify-content: center;
+    margin: 25px auto;
+  }
+  
+  .keypad button {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+    font-weight: 600;
+    background: linear-gradient(135deg, rgba(255,107,157,0.3), rgba(72,219,251,0.3));
+    border: 2px solid rgba(255,255,255,0.2);
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .keypad button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff6b9d, #48dbfb);
+    box-shadow: 0 8px 25px rgba(255,107,157,0.5);
+  }
+  
+  .keypad button:active {
+    transform: scale(0.95);
+  }
+  
+  #message {
+    margin-top: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(255,107,157,0.2), rgba(72,219,251,0.2));
+    border-radius: 20px;
+    border: 2px solid rgba(255,107,157,0.3);
+    font-size: 1.1em;
+    line-height: 1.8;
+    white-space: pre-line;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+    animation: scrollUnroll 1s ease-out;
+    transform-origin: top center;
+  }
+
+  .envelope-flap {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid rgba(255,107,157,0.5);
+    animation: flapOpen 1s ease-out;
+  }
+
+  @keyframes scrollUnroll {
+    0% { opacity: 0; transform: scaleY(0) rotateX(90deg); }
+    50% { opacity: 0.7; transform: scaleY(0.5) rotateX(45deg); }
+    100% { opacity: 1; transform: scaleY(1) rotateX(0deg); }
+  }
+  
+  #message::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #message::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+  }
+  
+  #message::-webkit-scrollbar-thumb {
+    background: rgba(255,107,157,0.5);
+    border-radius: 10px;
+  }
+  
+  #confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
+  .confetti-piece {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    animation: confettiFall 4s ease-out forwards;
+  }
+
+  .confetti-piece.circle { border-radius: 50%; }
+  .confetti-piece.square { border-radius: 0; }
+  .confetti-piece.triangle {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 12px solid;
+  }
+  .confetti-piece.star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  
+  @keyframes confettiFall {
+    0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    75% { transform: translateX(10px); }
+  }
+
+  .fireworks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 50%;
+    animation: explode 1s ease-out forwards;
+  }
+
+  @keyframes explode {
+    0% { transform: scale(0); opacity: 1; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0); opacity: 0; }
+  }
+
+  @keyframes zoom {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+  @keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+  }
+
+  @keyframes rainbowGlow {
+    0% { box-shadow: 0 0 20px rgba(255,107,157,0.5); }
+    25% { box-shadow: 0 0 20px rgba(254,202,87,0.5); }
+    50% { box-shadow: 0 0 20px rgba(72,219,251,0.5); }
+    75% { box-shadow: 0 0 20px rgba(255,155,243,0.5); }
+    100% { box-shadow: 0 0 20px rgba(255,107,157,0.5); }
+  }
+
+  @keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  .vault.unlocked {
+    animation: rainbowGlow 2s infinite;
+  }
+
+  .surprise-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    z-index: 2000;
+    display: none;
+    animation: heartbeat 1s infinite;
+  }
+  
+  @media (max-width: 768px) {
+      .vault-container {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+        padding: 20px;
+      }
+      
+      .keypad {
+        grid-template-columns: repeat(3, 70px);
+        gap: 10px;
+      }
+      
+      .keypad button {
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+      }
+    }
+  
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .unlock-btn {
+    background: linear-gradient(135deg, #ff6b9d, #feca57);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s;
+    margin: 20px 0;
+  }
+  
+  .unlock-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(255,107,157,0.5);
+  }
+  
+  .surprise-btn {
+    background: linear-gradient(135deg, #ff6b9d, #feca57);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 0;
+    transition: all 0.3s;
+  }
+  
+  .surprise-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255,107,157,0.5);
+  }
+  
+  .hint-btn {
+    background: linear-gradient(135deg, #48dbfb, #ff6b9d);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 10px 0;
+    transition: all 0.3s;
+  }
+  
+  .hint-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(72,219,251,0.5);
+  }
+  
+  .countdown {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: #feca57;
+    text-shadow: 0 0 10px rgba(254,202,87,0.8);
+    margin-top: 10px;
+  }
+
+  .intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0a0e27, #1a1a2e);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: introFadeOut 3s ease-in-out forwards;
+  }
+
+  .intro-title {
+    font-family: 'Righteous', cursive;
+    font-size: clamp(3em, 10vw, 6em);
+    background: linear-gradient(45deg, #ff6b9d, #feca57, #48dbfb, #ff9ff3);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradientShift 3s ease infinite, introPulse 2s ease-in-out infinite;
+    text-shadow: 0 0 50px rgba(255,107,157,0.8);
+    margin-bottom: 20px;
+  }
+
+  .intro-subtitle {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(1.5em, 5vw, 2.5em);
+    color: #feca57;
+    animation: introPulse 2s ease-in-out infinite;
+    text-shadow: 0 0 20px rgba(254,202,87,0.8);
+  }
+
+  @keyframes introFadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+  }
+
+  @keyframes introPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+  }
+
+  @media (max-width: 480px) {
+    .vault-container {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+      padding: 15px;
+    }
+
+    .keypad {
+      grid-template-columns: repeat(3, 60px);
+      gap: 8px;
+    }
+
+    .keypad button {
+      width: 60px;
+      height: 60px;
+      font-size: 18px;
+    }
+    iframe {
+      height: 120px;
+    }
+    .unlock-btn {
+      padding: 12px 24px;
+      font-size: 1em;
+    }
+    .hint-btn {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  }
+
+  .hints-popup, .reflect-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    z-index: 1500;
+    display: none;
+    animation: modalSlideIn 0.5s;
+    max-width: 500px;
+    text-align: center;
+    border: 3px solid #ff6b9d;
+  }
+
+  .hints-content h3, .reflect-content h3 {
+    color: #ff6b9d;
+    margin-bottom: 15px;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+  }
+
+  .hints-content p, .reflect-content p {
+    color: #333;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+
+  .hints-content ul {
+    text-align: left;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+  }
+
+  .hints-content li {
+    margin: 8px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #333;
+  }
+
+  .hints-content li:before {
+    content: '🔑';
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+  }
+
+  .reflect-content textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #ff6b9d;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    resize: none;
+    margin: 15px 0;
+  }
+
+  .reflect-content button {
+    background: linear-gradient(135deg, #48dbfb, #ff6b9d);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+    transition: all 0.3s;
+  }
+
+  .reflect-content button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(72,219,251,0.5);
+  }
+
+  .close-popup-btn {
+    background: linear-gradient(135deg, #ff6b9d, #feca57);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    transition: all 0.3s;
+  }
+
+  .close-popup-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(255,107,157,0.5);
+  }
+
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(4, 80px);
+    gap: 10px;
+    margin: 20px auto;
+    justify-content: center;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(255,107,157,0.3), rgba(72,219,251,0.3));
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card.flipped {
+    background: rgba(255,255,255,0.9);
+    color: #333;
+  }
+
+  .card.matched {
+    background: rgba(254,202,87,0.5);
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="stars" id="stars"></div>
+<div class="particles" id="particles"></div>
+<div class="fireworks" id="fireworks"></div>
+
+<div id="intro" class="intro">
+  <h1 class="intro-title">🎆 Happy New Year 2026! 🎆</h1>
+  <p class="intro-subtitle">Get ready for some magical surprises...</p>
+</div>
+
+<header>
+  <h1>✨ Secret New Year Vaults 2026 🎆</h1>
+  <p class="subtitle">🎁 Each vault holds a special surprise! Click to unlock yours! 🎁</p>
+  <div id="countdown" class="countdown">New Year Countdown: <span id="timeLeft"></span></div>
+  <button class="hint-btn" onclick="showVaultHints()">💡 Vault Hints</button>
+  <button class="surprise-btn" onclick="randomSurprise()">🎉 Surprise Me!</button>
+  <button class="surprise-btn" onclick="sendLove()">💖 Send Love</button>
+  <button class="hint-btn" onclick="showReflection()">🤔 Reflect</button>
+</header>
+
+<div class="vault-container">
+  <div class="vault" data-index="0">
+    <span class="vault-emoji">💎</span>
+    <div class="vault-title">Mystery Vault #1</div>
+  </div>
+  <div class="vault" data-index="1">
+    <span class="vault-emoji">⚡</span>
+    <div class="vault-title">Mystery Vault #2</div>
+  </div>
+  <div class="vault" data-index="2">
+    <span class="vault-emoji">🌈</span>
+    <div class="vault-title">Mystery Vault #3</div>
+  </div>
+  <div class="vault" data-index="3">
+    <span class="vault-emoji">🔥</span>
+    <div class="vault-title">Mystery Vault #4</div>
+  </div>
+  <div class="vault" data-index="4">
+    <span class="vault-emoji">🌟</span>
+    <div class="vault-title">Mystery Vault #5</div>
+  </div>
+  <div class="vault" data-index="5">
+    <span class="vault-emoji">🍀</span>
+    <div class="vault-title">Mystery Vault #6</div>
+  </div>
+  <div class="vault" data-index="6">
+    <span class="vault-emoji">💫</span>
+    <div class="vault-title">Mystery Vault #7</div>
+  </div>
+  <div class="vault" data-index="7">
+    <span class="vault-emoji">🎯</span>
+    <div class="vault-title">Mystery Vault #8</div>
+  </div>
+  <div class="vault" data-index="8">
+    <span class="vault-emoji">🎲</span>
+    <div class="vault-title">Mystery Vault #9</div>
+  </div>
+  <div class="vault" data-index="9">
+    <span class="vault-emoji">🎁</span>
+    <div class="vault-title">Mystery Vault #10</div>
+  </div>
+  <div class="vault" data-index="10">
+    <span class="vault-emoji">🌹</span>
+    <div class="vault-title">Mystery Vault #11</div>
+  </div>
+  <div class="vault" data-index="11">
+    <span class="vault-emoji">🦄</span>
+    <div class="vault-title">Mystery Vault #12</div>
+  </div>
+  <div class="vault" data-index="12">
+    <span class="vault-emoji">🎵</span>
+    <div class="vault-title">Mystery Vault #13</div>
+  </div>
+  <div class="vault" data-index="13">
+    <span class="vault-emoji">🎉</span>
+    <div class="vault-title">Mystery Vault #14</div>
+  </div>
+</div>
+
+<div id="overlay">
+  <span class="close-btn" onclick="closeOverlay()">×</span>
+  <div class="modal-content">
+    <div id="teaser">
+      <h2>🎁 A Special Surprise Awaits! 🎁</h2>
+      <p>Are you ready to unlock your New Year vault?</p>
+      <button class="unlock-btn" onclick="showPassword()">Yes, Unlock It!</button>
+    </div>
+    <div id="passwordSection" style="display:none;">
+      <h2 id="vaultTitle">🔐 Unlock Your Surprise! 🔐</h2>
+      <img id="gif" src="" alt="Surprise GIF">
+      <input id="passcodeInput" placeholder="Enter birthday MMDD" readonly>
+      <div class="keypad">
+        <button onclick="appendPass('1')">1</button>
+        <button onclick="appendPass('2')">2</button>
+        <button onclick="appendPass('3')">3</button>
+        <button onclick="appendPass('4')">4</button>
+        <button onclick="appendPass('5')">5</button>
+        <button onclick="appendPass('6')">6</button>
+        <button onclick="appendPass('7')">7</button>
+        <button onclick="appendPass('8')">8</button>
+        <button onclick="appendPass('9')">9</button>
+        <button onclick="backspacePass()">⌫</button>
+        <button onclick="appendPass('0')">0</button>
+        <button onclick="checkPassword()">✅</button>
+      </div>
+      <button onclick="showHint()" class="hint-btn">💡 Hint</button>
+    </div>
+    <div id="message" style="display:none;"></div>
+    <div id="gameSection" style="display:none;">
+      <h2>🎮 New Year Memory Match 🎮</h2>
+      <p>Match the pairs to earn extra surprises!</p>
+      <div id="gameBoard" class="game-board"></div>
+      <div id="gameStats">
+        <p>Moves: <span id="moves">0</span></p>
+        <p>Matches: <span id="matches">0</span>/8</p>
+      </div>
+      <button class="surprise-btn" onclick="backToMessage()">Back to Message</button>
+    </div>
+  </div>
+  <div id="confetti"></div>
+  </div>
+
+  <div id="hintsPopup" class="hints-popup">
+    <div class="hints-content">
+      <h3>💡 Vault Hints 💡</h3>
+      <p>Need a clue to unlock the vaults? Here are some hints:</p>
+      <ul id="hintsList"></ul>
+      <button class="close-popup-btn" onclick="closeHintsPopup()">Close</button>
+    </div>
+  </div>
+
+  <div id="reflectPopup" class="reflect-popup">
+    <div class="reflect-content">
+      <h3>🤔 Reflect on 2025 🤔</h3>
+      <p>Take a moment to reflect on the past year. What are you grateful for? What did you learn?</p>
+      <textarea id="reflectionText" placeholder="Write your reflections here..."></textarea>
+      <button onclick="saveReflection()">Save Reflection</button>
+      <button onclick="showRandomReflection()">Show Random Reflection</button>
+      <button class="close-popup-btn" onclick="closeReflectPopup()">Close</button>
+      <div id="savedReflection" style="margin-top: 20px; display: none;">
+        <p style="color: #ff6b9d; font-weight: bold;">Your Reflection:</p>
+        <p id="reflectionDisplay"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="hostingPopup" class="hosting-popup">
+    <div class="hosting-content">
+      <h3>🌟 Make This Surprise Even Bigger! 🌟</h3>
+      <p>This page is currently running locally, but to share the magic with your friends from anywhere, host it online!</p>
+      <p>Easy steps:</p>
+      <ul>
+        <li>Upload to GitHub and use GitHub Pages</li>
+        <li>Or use free hosting like Netlify, Vercel</li>
+      </ul>
+      <button class="surprise-btn" onclick="closeHostingPopup()">Got it! 🎉</button>
+    </div>
+  </div>
+
+<script>
+// Countdown to New Year
+function updateCountdown() {
+  const now = new Date();
+  const newYear = new Date('2026-01-01T00:00:00');
+  const diff = newYear - now;
+  if (diff > 0) {
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById('timeLeft').innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  } else {
+    document.getElementById('timeLeft').innerText = 'Happy New Year!';
+  }
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+function showVaultHints() {
+  const hintsList = document.getElementById('hintsList');
+  hintsList.innerHTML = '';
+  vaults.forEach((vault, index) => {
+    const li = document.createElement('li');
+    li.textContent = `Vault ${index + 1}: ${vault.hint || "Enter birthday MMDD"}`;
+    hintsList.appendChild(li);
+  });
+  document.getElementById('hintsPopup').style.display = 'block';
+  launchMiniConfetti(window.innerWidth / 2, window.innerHeight / 2); // Creative touch
+}
+
+function closeHintsPopup() {
+  document.getElementById('hintsPopup').style.display = 'none';
+}
+
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('gameSection').style.display = 'none';
+  document.getElementById('message').style.display = 'none';
+  document.getElementById('passwordSection').style.display = 'none';
+  document.getElementById('teaser').style.display = 'none';
+}
+
+function randomSurprise() {
+  const surprises = [
+    () => launchConfetti(),
+    () => launchFireworks(),
+    () => { document.body.style.animation = 'zoom 0.5s'; setTimeout(() => document.body.style.animation = '', 500); },
+    () => { document.querySelector('h1').style.animation = 'shake 0.5s'; setTimeout(() => document.querySelector('h1').style.animation = '', 500); },
+    () => { for (let i = 0; i < 10; i++) { setTimeout(() => launchMiniConfetti(Math.random() * window.innerWidth, Math.random() * window.innerHeight), i * 100); } },
+    () => { alert('🎈 Surprise! You found a hidden message! 🎈'); },
+    () => { document.body.style.filter = 'hue-rotate(90deg)'; setTimeout(() => document.body.style.filter = '', 2000); },
+    () => { const emoji = document.createElement('div'); emoji.innerHTML = '🎊'; emoji.style.position = 'fixed'; emoji.style.fontSize = '5em'; emoji.style.left = Math.random() * 80 + 'vw'; emoji.style.top = Math.random() * 80 + 'vh'; emoji.style.animation = 'bounce 2s'; document.body.appendChild(emoji); setTimeout(() => emoji.remove(), 2000); },
+    () => { document.body.style.transform = 'rotate(1deg)'; setTimeout(() => document.body.style.transform = '', 1000); },
+    () => { const colors = ['#ff6b9d', '#feca57', '#48dbfb', '#ff9ff3']; document.body.style.background = colors[Math.floor(Math.random() * colors.length)]; setTimeout(() => document.body.style.background = '#0a0e27', 2000); },
+    () => { for (let i = 0; i < 5; i++) { setTimeout(createFloatingEmoji, i * 200); } },
+    () => { alert('🎊 You\'re awesome! Keep shining! 🎊'); },
+    () => { document.querySelectorAll('.vault').forEach(v => { v.style.animation = 'heartbeat 1s'; setTimeout(() => v.style.animation = '', 1000); }); },
+    () => { document.body.style.filter = 'invert(1)'; setTimeout(() => document.body.style.filter = '', 3000); },
+    () => { const text = document.createElement('div'); text.innerHTML = '🎉 HAPPY NEW YEAR! 🎉'; text.style.position = 'fixed'; text.style.top = '50%'; text.style.left = '50%'; text.style.transform = 'translate(-50%, -50%)'; text.style.fontSize = '3em'; text.style.color = '#ff6b9d'; text.style.zIndex = '1000'; text.style.textShadow = '0 0 20px rgba(255,107,157,0.8)'; document.body.appendChild(text); setTimeout(() => text.remove(), 3000); },
+    () => { document.querySelector('h1').style.color = '#48dbfb'; document.querySelector('h1').style.textShadow = '0 0 20px rgba(72,219,251,0.8)'; setTimeout(() => { document.querySelector('h1').style.color = ''; document.querySelector('h1').style.textShadow = ''; }, 2000); },
+    () => { document.body.style.filter = 'blur(2px)'; setTimeout(() => document.body.style.filter = '', 1500); },
+    () => { const sparkle = document.createElement('div'); sparkle.innerHTML = '✨'; sparkle.style.position = 'fixed'; sparkle.style.fontSize = '4em'; sparkle.style.left = '50%'; sparkle.style.top = '50%'; sparkle.style.transform = 'translate(-50%, -50%)'; sparkle.style.animation = 'zoom 1s'; sparkle.style.zIndex = '1000'; document.body.appendChild(sparkle); setTimeout(() => sparkle.remove(), 1000); },
+    () => { alert('🌟 You are a star! Shine bright! 🌟'); },
+    () => { document.body.style.transform = 'scale(1.05)'; setTimeout(() => document.body.style.transform = '', 500); },
+    () => { const rain = document.createElement('div'); rain.innerHTML = '💧'; rain.style.position = 'fixed'; rain.style.fontSize = '2em'; rain.style.left = Math.random() * 100 + 'vw'; rain.style.top = '-10px'; rain.style.animation = 'floatUp 3s linear'; document.body.appendChild(rain); setTimeout(() => rain.remove(), 3000); },
+    // New creative surprises
+    () => { document.body.style.background = 'linear-gradient(45deg, #ff6b9d, #feca57, #48dbfb, #ff9ff3)'; setTimeout(() => document.body.style.background = '#0a0e27', 3000); },
+    () => { const wave = document.createElement('div'); wave.innerHTML = '🌊'; wave.style.position = 'fixed'; wave.style.fontSize = '4em'; wave.style.bottom = '0'; wave.style.left = '0'; wave.style.width = '100%'; wave.style.textAlign = 'center'; wave.style.animation = 'floatUp 2s'; document.body.appendChild(wave); setTimeout(() => wave.remove(), 2000); },
+    () => { document.querySelectorAll('.vault-emoji').forEach(e => { e.style.animation = 'spin 1s infinite'; setTimeout(() => e.style.animation = 'bounce 2s infinite', 1000); }); },
+    () => { const poem = ['Roses are red,', 'Violets are blue,', 'Happy New Year,', 'To someone as awesome as you! 🎉']; let i = 0; const interval = setInterval(() => { if (i < poem.length) { alert(poem[i]); i++; } else clearInterval(interval); }, 1000); },
+    () => { document.body.style.transform = 'skew(5deg)'; setTimeout(() => document.body.style.transform = '', 2000); },
+    () => { for (let i = 0; i < 20; i++) { setTimeout(() => { const star = document.createElement('div'); star.innerHTML = '⭐'; star.style.position = 'fixed'; star.style.fontSize = '2em'; star.style.left = Math.random() * 100 + 'vw'; star.style.top = Math.random() * 100 + 'vh'; star.style.animation = 'twinkle 2s'; document.body.appendChild(star); setTimeout(() => star.remove(), 2000); }, i * 100); } },
+    () => { const mirror = document.createElement('div'); mirror.innerHTML = '🪞'; mirror.style.position = 'fixed'; mirror.style.fontSize = '5em'; mirror.style.left = '50%'; mirror.style.top = '50%'; mirror.style.transform = 'translate(-50%, -50%)'; mirror.style.animation = 'heartbeat 1s infinite'; document.body.appendChild(mirror); setTimeout(() => mirror.remove(), 3000); alert('Look in the mirror: You\'re amazing! 💖'); },
+    () => { document.querySelector('h1').innerHTML = '🎆 CREATIVE SURPRISE! 🎆'; setTimeout(() => document.querySelector('h1').innerHTML = '✨ Secret New Year Vaults 2026 🎆', 3000); },
+    () => { const balloon = document.createElement('div'); balloon.innerHTML = '🎈'; balloon.style.position = 'fixed'; balloon.style.fontSize = '3em'; balloon.style.left = Math.random() * 90 + 'vw'; balloon.style.bottom = '-50px'; balloon.style.animation = 'floatUp 4s linear'; document.body.appendChild(balloon); setTimeout(() => balloon.remove(), 4000); },
+    () => { document.body.style.filter = 'sepia(1)'; setTimeout(() => document.body.style.filter = '', 2500); },
+    () => { const quote = document.createElement('div'); quote.innerHTML = '"Creativity is intelligence having fun." - Albert Einstein'; quote.style.position = 'fixed'; quote.style.top = '20%'; quote.style.left = '50%'; quote.style.transform = 'translateX(-50%)'; quote.style.fontSize = '1.5em'; quote.style.color = '#feca57'; quote.style.zIndex = '1000'; quote.style.textShadow = '0 0 10px rgba(254,202,87,0.8)'; document.body.appendChild(quote); setTimeout(() => quote.remove(), 5000); }
+  ];
+  const randomIndex = Math.floor(Math.random() * surprises.length);
+  surprises[randomIndex]();
+}
+
+function megaSurprise() {
+  launchConfetti();
+  launchFireworks();
+  document.body.style.animation = 'zoom 0.5s';
+  setTimeout(() => document.body.style.animation = '', 500);
+  randomSurprise();
+  randomSurprise();
+}
+
+let titleClicks = 0;
+document.querySelector('h1').addEventListener('click', () => {
+  titleClicks++;
+  if (titleClicks === 5) {
+    alert('🎉 Easter Egg Found! Happy New Year! 🎉');
+    launchConfetti();
+    launchFireworks();
+    titleClicks = 0;
+  }
+});
+
+const starsContainer = document.getElementById('stars');
+for (let i = 0; i < 200; i++) {
+  const star = document.createElement('div');
+  star.className = 'star';
+  star.style.left = Math.random() * 100 + '%';
+  star.style.top = Math.random() * 100 + '%';
+  star.style.animationDelay = Math.random() * 3 + 's';
+  star.addEventListener('click', () => {
+    star.style.animation = 'none';
+    setTimeout(() => star.style.animation = 'twinkle 0.5s', 10);
+    launchMiniConfetti(star.offsetLeft, star.offsetTop);
+  });
+  starsContainer.appendChild(star);
+}
+
+const particlesContainer = document.getElementById('particles');
+for (let i = 0; i < 30; i++) {
+  const particle = document.createElement('div');
+  particle.className = 'particle';
+  particle.style.left = Math.random() * 100 + '%';
+  particle.style.animationDelay = Math.random() * 15 + 's';
+  particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+  particlesContainer.appendChild(particle);
+}
+
+// Floating emojis
+setInterval(() => {
+  if (Math.random() < 0.3) { // 30% chance every 5 seconds
+    createFloatingEmoji();
+  }
+}, 5000);
+
+function createFloatingEmoji() {
+  const emojis = ['🎆', '✨', '🎉', '🎊', '💫', '🌟', '🦄', '🎁'];
+  const emoji = document.createElement('div');
+  emoji.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+  emoji.style.position = 'fixed';
+  emoji.style.fontSize = '2em';
+  emoji.style.left = Math.random() * 90 + 'vw';
+  emoji.style.top = '100vh';
+  emoji.style.animation = 'floatUp 5s linear forwards';
+  emoji.style.pointerEvents = 'none';
+  emoji.style.zIndex = '5';
+  document.body.appendChild(emoji);
+  setTimeout(() => emoji.remove(), 5000);
+}
+
+const vaults = [
+  {
+    password: "0813",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/aCyrhzx-JiQAAAAC/silly.gif", // Example favorite GIF
+    message: `Happy New Year, Sammy! ✨
+
+Before the year ends, I just want to say thank you for always being part of my year. I'm really, really grateful. Grabe talaga lahat ng pinagdaanan natin this 2025 — magkasama sa hirap at ginhawa, pati sa paglayas ng kasama sa dorm eme HAHAHA. Ang daming nangyari!
+
+To my day one: Kapag napagod ka, pwede ka talagang magpahinga. And kapag hindi ka tinatrato ng tama, remember that you always deserve better.
+
+As we enter 2026, may we welcome new tears of growth (not pagod ha, char), new manifestations, new wins, and overflowing success sa lahat ng ginagawa natin. Love you, Sam! Sana hindi ka na marupok this 2026 HAHAHA. Stay happy, stay you, and let's manifest a year filled with peace, progress, and blessings! 💖
+
+💎 Quote: "You deserve better, always — never settle for less than your worth."`,
+    hint: "Hint: A special day in August!"
+  },
+  {
+    password: "0925",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/sz_fKaYl-UoAAAAd/brightwin-2gether-the-series.gif",
+    hint: "Hint: A special day in September!",
+    message: `Happy New Year, Rey! ⚡
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. Grabe talaga lahat ng pinagdaanan natin — the laughs, the struggles, and even the small moments that we shared. Every memory with you made this year so much brighter.
+
+To my inspiration: We really need to bond more, opo HAHAHAHA. But seriously, I hope you're doing well, babe. Di na tayo masyado nagkakausap lately, and I miss our talks and the little things we do together. I'm so proud of you and all your achievements — grabe, Reya, our arki is really growing! Wag mo naman kaming iwan sa putikan HAHAHAHAH.
+
+Love you so much, Reya 💖. May this new year bring you endless joy, growth, and success. Let's manifest more happiness, more blessings, and unforgettable moments together. I hope 2026 becomes our year full of laughter, love, and everything we've been dreaming of. Stay amazing, stay you, and never forget how much you mean to me. ✨
+
+⚡ Quote: "Surround yourself with love, laughter, and people who lift you up — wag mong kalimutan mag-prioritize ng sarili mo."`
+  },
+  {
+    password: "0625",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/B-a3fI0LWgwAAAAC/george-russell-russell.gif",
+    hint: "Hint: A special day in June!",
+    message: `Happy New Year, Sophia! 🌈
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. Super dami talaga ng nangyari this year, pero I'm really grateful for our friendship. Grabe, this year was so hard for us in so many ways, but no matter what, I'm always here for you, beb. Don't worry, wag kang matakot, and remember that yung right one para sa'yo, maybe hindi pa binibigay ni Lord ngayon — let's just wait patiently HAHAHA.
+
+To my mowm in life: You've always been such a loyal, supportive friend kahit na minsan medyo bading eme HAHAHA! Malala ang support mo, and I'm so lucky to have someone like you by my side. Whatever path you take, whatever challenges come your way, I know you'll handle it with strength and grace.
+
+As we step into 2026, I hope this year brings you endless happiness, new opportunities, and blessings that you truly deserve. Remember to take care of yourself, follow your dreams, and trust the timing of your life. I'm cheering for you always, Sophia, and I know amazing things are coming your way. 💖
+
+🌈 Quote: "Trust the timing of your life — the right opportunities and people will come at the right time."`
+  },
+  {
+    password: "0817",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/MnzUR1PyKqUAAAAC/francine-diaz-cute-meme.gif",
+    hint: "Hint: A special day in August!",
+    message: `Happy New Year, Eunice! 🔥
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. Marupok paren ba this 2026? eme HAHAHA. I'm really grateful to have you, bebe. Need na natin mag-bonding, opo! Thank you so much for being there this year, especially sa dami ng moments na broken ako — huy, hindi HAHAHA, kidding aside.
+
+To my twin: I hope this coming year makes you shine even brighter. Don't be too harsh on yourself, because you truly deserve to be loved and happy. Huy, English speaking yan HAHAHA! De, always remember, kahit iwan kayo ng mga partners niyo sa life, I'm always here — just one call away.
+
+To my future flight attendant: Strive, shine, and always follow your dreams. I know 2026 will bring you so many blessings, new opportunities, and unforgettable memories. Let's make more happy moments together and laugh through everything life throws at us. 💖
+
+🔥 Quote: "Life is full of turbulence, but even the strongest storms pass — keep flying high, Eunice."`
+  },
+  {
+    password: "1111",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/1hb35pgZbqIAAAAd/nailong-dwerk.gif",
+    hint: "Hint: A special day in November!",
+    message: `Happy New Year, Ai! 🌟
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. To my unpaid therapist na hinding-hindi nagsasawa sa endless rant ko, thank you so much for being the plot twist of my year. I'm truly grateful sa inyo nila Iris, kasi nung nakita siguro ni Lord na super hirap ko sa pagkakaibigan sa UST, binigyan Niya ako ng mga genuine na tao na katulad niyo.
+
+I'm really thankful for that — for the genuine connection, the comfort, and the safe space you give. I hope this coming year won't be harsh on us. Deadma na sa mga inggit, beb — we know our worth. And always remember, if you are my unpaid therapist, I will always be your unpaid therapist too. Wag kang mahiyang mag-rant, magsabi, or maglabas ng sama ng loob. I'm here for you the same way you're here for me.
+
+Thank you for making this year lighter, funnier, and more bearable. Here's to more late-night calls, long rants, healing moments, and memories that remind us we're growing and becoming better people. I love you, Ai, and I'm so excited for what 2026 has in store for you. 💖✨
+
+🌟 Quote: "The right people come at the right time — and you are one of those blessings."`
+  },
+  {
+    password: "0307",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/0WERwdVKHTAAAAAd/max-verstappen-f1.gif",
+    hint: "Hint: A special day in March!",
+    message: `Happy New Year, Iris! 🍀
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. To my ultimate rant buddy, I'm really grateful na ang plot twist ng year ko ay makilala kayo. Grabe yung lahat ng nangyayari sa UST this year, pero thanks to Sam at kay Lord na nakilala ko kayo and I'm truly thankful for that.
+
+Thank you for always, always, listening to my rants and dramas in life. I'm so grateful to have you as my comfort person HAHAHAH! De, really, I'm thankful for this year's plot twist na naging magical dahil sa UAAP moments at sa lahat ng memories natin. Always remember na kasama mo ako sa lahat ng rants mo. If you need a shoulder to cry on, go on — I'm always here, ready to listen to all your drama and rants.
+
+As we step into 2026, may this year bring you success in all your dreams, endless opportunities, happiness that overflows, and blessings na hindi mo pa naiimagine. I hope this year we continue to grow, laugh, and create more unforgettable memories. Keep believing in yourself, trust the journey, and always remember you deserve the best! Love you so much, Iris! 💖✨
+
+🍀 Quote: "Celebrate your wins, embrace challenges, and welcome blessings with an open heart."`
+  },
+  {
+    password: "0827",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/9v4JDac9554AAAAC/kdrama-dance.gif",
+    hint: "Hint: A special day in August!",
+    message: `Happy New Year, Shanti! 💫
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. To my spiritual sis, I'm really grateful for UAAP kasi nakilala ko kayo doon, and thanks to Sam, grabe, you became one of the biggest plot twists of my year. During the moments when I felt really down in UST friendship life, God gave me you and I'm so thankful for that friendship.
+
+I hope we'll have more bonding moments this 2026! I love you, Shanti. Keep that burning heart in you and always trust in God's plan. Thank you for being not just the joker of the group, but also someone with natural humor, light, and spirit that uplifts everyone around you.
+
+Always remember, I'm here for you, no matter what — just one call away. May this year bring you spiritual growth, peace, endless blessings, and success in everything you do. Keep shining, keep praying, and keep inspiring everyone with your light. 💖✨
+
+💫 Quote: "Trust in God's timing — He will guide you to where you are meant to be."`
+  },
+  {
+    password: "0401",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/ukqjyRdSLggAAAAC/game-sports.gif",
+    hint: "Hint: A special day in April!",
+    message: `Happy New Year, Gio! 🎯
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. To the boyfriend ng lahat HAHAHAHA, I'm so thankful and grateful to have you in my life. Grabe yung plot twist ng 2025 — nadagdagan ako ng friends from different univs, and I'm really thankful for that!
+
+If you ever need to rant or chika about life, you can always come to me. Kapag sobrang gulo na, I'm just one call away. Sana makapag-Roblox na ulit tayo HAHAHA, kidding! Thank you for making this year brighter and more fun, Giooo. 💖
+
+🎯 Quote: "Manifest happiness, new adventures, and success in every part of your life this year."`
+  },
+  {
+    password: "0416",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/psmFUT57ei4AAAAd/mommy-oni-toni-fowler.gif",
+    hint: "Hint: A special day in April!",
+    message: `Happy New Year, Ralf! 🎲
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. To my ex-crushiecakes HAHAHAHA eme, and to my USTe budd! Thank you so much for being there this year — sa pagdamay, sa tawa, at sa lahat ng moments we shared. I'm really grateful and thankful for this year. Grabe, the plot twist of your year was… umamin? HAHAHAHA kidding!
+
+Thank you, Ralf, for being such a loyal friend and one of my bestmates. I hope we'll have more bonding moments, adventures, and laughter before graduation. Let's make 2026 a year full of memories, joy, and success. And of course, may aso bring you extra happiness because pets = happiness overload! 🐶💖
+
+May this new year bring you good vibes, blessings, personal growth, and success in everything you do. Keep being your awesome self, laugh through the challenges, and treasure all the small joys that make life beautiful. As we step into 2026, I hope this year brings you happiness, success, new opportunities, and amazing memories. Keep being your amazing self, spread good vibes, and always know that you're appreciated and loved.
+
+🎲 Quote: "Friendship and laughter make life sweeter — cherish every moment with your bestmates."`
+  },
+  {
+    password: "0508",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/jpb4X2wpf8sAAAAC/kedikizx-sanrio.gif",
+    hint: "Hint: A special day in May!",
+    message: `Happy New Year, Johanna! 🎁
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. To my personal assistant lagi HAHAHA! Thank you so much, I'm really grateful to have you in my life. Grabe, di ko ma-imagine kung wala ka, beb. Parang ako lang gagawa ng inuutos ko na tasks eme, pero ayun, thank you talaga.
+
+I'm looking forward to more bonding, more rants, more kwentuhan, at tawanan pa natin this 2026. Sana ma-secure mo na rin yung OJT HAHAHA! I hope this year brings you happiness, success, blessings, and more unforgettable memories. Keep being your awesome, loyal, and super fun self. 💖
+
+Thank you for being someone I can always count on — whether sa tasks, sa rants, or kahit sa mga simple kwentuhan lang. Grabe, life would be so different without you!
+
+🎁 Quote: "May 2026 bring you confidence, courage, and endless laughter — because your happiness matters."`
+  },
+  {
+    password: "0702",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/H79BvrT_wyQAAAAC/ryujin-ryujin-itzy.gif",
+    hint: "Hint: A special day in July!",
+    message: `Happy New Year, Gracel! 🌹
+
+Grabe, thank you for being part of my life this 2025. Salamat sa lahat ng tawanan, kwentuhan, at support moments natin sa UST. I'm really grateful na friend kita.
+
+To my secre opo HAHAHA, because you made all tasks possible! I just want to say congrats dahil nakapasok ka sa Startpoint — shet, you made it! Pero aside from that, I'm really thankful for our friendship at sa lahat ng pinagdaanan natin this year. Wag mong isipin na hate ko kayo o kung ano man, hindi! I'm just happy and proud for you all, kasi kaya naman ganyan, do I deserve you guys? Huy, hindi magdadrama eme HAHAHA!
+
+More bonding moments to us, lalo na yung hindi na acads. Sana mas marami pang kwentuhan, laughter, at support sa isa't isa. Women loving women, go bading HAHAHA! Sana sa 2026, maging masaya, successful, at puno ng blessings ang buhay mo. Keep achieving, keep smiling, at wag kalimutang i-enjoy bawat moment kasama ang mga tunay na friends. 💖
+
+🌹 Quote: "Strong women uplift each other — may 2026 bring you success, happiness, and friendships that inspire your soul."`
+  },
+  {
+    password: "0513",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/zVdsjTOzsXkAAAAC/lewis-hamilton-lh44.gif",
+    hint: "Hint: A special day in May!",
+    message: `Happy New Year, Daryl! 🦄
+
+Grabe, thank you for being part of my life this 2025. I'm really grateful na friend kita. To our boii in the group, thank you so much for accepting the Capstone noong 3rd year — grabe, if hindi mo in-accept, iyak nalang kami HAHAHAH!
+
+Kidding aside, I'm really grateful for that plot twist, and for all the support, chika, at F1 moments we shared. Sana sa 2026, mas marami pang adventures, bonding, at kwentuhan pa tayo. More fun memories, more success, at more blessings for you. Keep being loyal, funny, and reliable kasi you really make our group complete! 💖
+
+🦄 Quote: "True friends make the journey unforgettable — may 2026 bring you laughter, success, and endless good vibes."`
+  },
+  {
+    password: "1123",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/OeX8CYqODM4AAAAd/alyxphobic-alyx.gif",
+    hint: "Hint: A special day in November!",
+    message: `Happy New Year, Ate Chaz! 🎵
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. To my ate in USTe, thank you for being like a sister to me — ramdam ko talaga yung care mo at support mo sa lahat ng moments natin. I know this year has been super busy, and we didn't get to bond as much as we wanted, pero I'm really grateful na nandiyan ka sa buhay ko.
+
+My always kadate sa paskuhan, thank you for making it unforgettable and special. Sana sa 2026, mas marami pang moments na magpapasaya sa atin, mas marami pang bonding, tawanan, at kwentuhan. I hope this year brings you success, happiness, growth, and blessings in everything you do. Keep being the amazing, caring, and inspiring person that you are — you really make life brighter for everyone around you. 💖
+
+🎵 Quote: "True friendship is a gift — may 2026 bring you endless joy, unforgettable moments, and blessings that touch your heart."`
+  },
+  {
+    password: "0711",
+    gif: "https://media1.tenor.com/m/tfXd9vABV1oAAAAd/ebriwan-manny.gif",
+    favorite: "https://media1.tenor.com/m/jMsI2-RkbpgAAAAC/takamatsu-tomori-tomori-takamatsu.gif",
+    hint: "Hint: A special day in July!",
+    message: `Happy New Year, Syd! 🎉
+
+Before the year ends, I just want to say thank you for being such an important part of my life this 2025. To my duckie HAHAHA — thank you, Syd, for always being there and for being my friend. I know this year has been super busy, and we didn't get to bond as much as we wanted, pero I'm really grateful na nandiyan ka sa buhay ko.
+
+Sana sa 2026, mas marami pa tayong bonding moments, kwentuhan, at laughter. More silly moments, more support for each other, at more memories na talagang hinding-hindi natin malilimutan. I'm always thankful for you, and I hope this year brings you happiness, success, good vibes, and blessings in everything you do. 💖
+
+🎉 Quote: "May this year bring you courage to chase your dreams, laughter in every moment, and friendships that grow even stronger."`
+  }
+];
+
+let currentVaultIndex = null;
+let unlockedVaults = new Set();
+
+document.querySelectorAll('.vault').forEach((vault, index) => {
+  vault.addEventListener('click', () => {
+    currentVaultIndex = index;
+    const vaultData = vaults[index];
+    document.getElementById('gif').src = vaultData.gif;
+    document.getElementById('passcodeInput').value = "";
+    document.getElementById('message').innerHTML = "";
+    document.getElementById('teaser').style.display = 'block';
+    document.getElementById('passwordSection').style.display = 'none';
+    document.getElementById('message').style.display = 'none';
+    document.getElementById('overlay').style.display = 'flex';
+  });
+});
+
+function appendPass(num) {
+  const input = document.getElementById('passcodeInput');
+  if (input.value.length < 4) {
+    input.value += num;
+  }
+}
+
+function backspacePass() {
+  const input = document.getElementById('passcodeInput');
+  input.value = input.value.slice(0, -1);
+}
+
+function checkPassword() {
+  const input = document.getElementById('passcodeInput').value;
+  const vault = vaults[currentVaultIndex];
+  const msg = document.getElementById('message');
+  
+  if (input === vault.password) {
+    document.getElementById('passwordSection').style.display = 'none';
+    msg.style.display = 'block';
+    msg.innerHTML = ''; // Start empty
+    setTimeout(() => {
+      const compliments = [
+        "You're an amazing person who lights up every room!",
+        "Your kindness and strength inspire everyone around you.",
+        "You're incredibly talented and full of potential!",
+        "Your smile can brighten the darkest days.",
+        "You're a true gem, unique and irreplaceable!",
+        "Your creativity knows no bounds!",
+        "You're a beacon of positivity and joy.",
+        "Your friendship is a treasure beyond measure."
+      ];
+      const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+      msg.innerHTML = vault.message.replace(/\n/g, '<br>') + '<br><br><img src="' + vault.favorite + '" width="100%" style="border-radius:20px; margin:10px 0;"><p style="color:#feca57; font-weight:bold; margin:10px 0;">' + randomCompliment + '</p><button class="surprise-btn" onclick="showGameInVault()">🎮 Play Mini-Game!</button><button class="surprise-btn" onclick="showExtraSurprise()">🎁 Extra Surprise!</button><div id="extra-surprise" style="display:none;"><img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="100%"><p>Here\'s a little dance for you! 💃</p></div><button class="surprise-btn" onclick="showChainSurprise()">🔥 Chain Surprise!</button><div id="chain-surprise" style="display:none; margin-top:20px;"><p>🎆 Boom! Another layer of fun! 🎆</p><img src="https://media1.tenor.com/m/isj45PSg-7UAAAAd/kween-ohkalma.gif" width="100%"></div><button class="surprise-btn" onclick="showQuoteSurprise()">💬 Quote Surprise!</button><div id="quote-surprise" style="display:none; margin-top:20px; background: rgba(255,107,157,0.2); padding:15px; border-radius:10px;"><p style="font-style:italic; color:#fff;">"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt</p></div><button class="surprise-btn" onclick="showJokeSurprise()">😂 Joke Surprise!</button><div id="joke-surprise" style="display:none; margin-top:20px; background: rgba(72,219,251,0.2); padding:15px; border-radius:10px;"><p style="color:#fff;">Why did the scarecrow win an award? Because he was outstanding in his field! 🌽</p></div><button class="surprise-btn" onclick="showWishSurprise()">🌟 Wish Surprise!</button><div id="wish-surprise" style="display:none; margin-top:20px; background: rgba(255,155,243,0.2); padding:15px; border-radius:10px;"><p style="color:#fff;">May your 2026 be filled with endless adventures, laughter, and success! ✨</p></div><div id="hidden-surprise" style="display:none; margin-top:20px; color:#ff6b9d; font-weight:bold;">🎉 Wait, there\'s more! Happy New Year again! 🎉</div>';
+      }, 100);
+      unlockedVaults.add(currentVaultIndex);
+    } else {
+      shakeVault();
+      document.getElementById('passcodeInput').value = '';
+    }
+    if (unlockedVaults.size === vaults.length) {
+      setTimeout(() => {
+        document.getElementById('overlay').style.display = 'flex';
+        document.getElementById('teaser').style.display = 'none';
+        document.getElementById('passwordSection').style.display = 'none';
+        document.getElementById('message').style.display = 'block';
+        document.getElementById('message').innerHTML = '<h2>🎉 MEGA SURPRISE! 🎉</h2><p>You\'ve unlocked all vaults! You are all amazing, and I\'m so grateful to have you in my life. Happy New Year 2026! May it bring us more adventures, laughter, and unforgettable moments. Love you all! 💖✨</p><img src="https://media1.tenor.com/m/2mgjK2H4XJQAAAAC/happy-new-year-fireworks.gif" width="100%"><button class="surprise-btn" onclick="megaSurprise()">🚀 Ultimate Surprise!</button>';
+      }, 2000);
+    }
+  }
+
+  function showPassword() {
+  document.getElementById('teaser').style.display = 'none';
+  document.getElementById('passwordSection').style.display = 'block';
+}
+
+function shakeVault() {
+  const vaultEl = document.querySelectorAll('.vault')[currentVaultIndex];
+  vaultEl.style.animation = 'none';
+  setTimeout(() => {
+    vaultEl.style.animation = 'shake 0.5s';
+  }, 10);
+}
+
+function showExtraSurprise() {
+  document.getElementById('extra-surprise').style.display = 'block';
+}
+
+function showChainSurprise() {
+  document.getElementById('chain-surprise').style.display = 'block';
+  launchFireworks();
+}
+
+function showQuoteSurprise() {
+  document.getElementById('quote-surprise').style.display = 'block';
+}
+
+function showJokeSurprise() {
+  document.getElementById('joke-surprise').style.display = 'block';
+}
+
+function showWishSurprise() {
+  document.getElementById('wish-surprise').style.display = 'block';
+}
+
+function showHint() {
+  alert(vaults[currentVaultIndex].hint || "Hint: Enter your birthday in MMDD format!");
+}
+
+function sendLove() {
+  for (let i = 0; i < 10; i++) {
+    setTimeout(() => {
+      const heart = document.createElement('div');
+      heart.innerHTML = '💖';
+      heart.style.position = 'fixed';
+      heart.style.fontSize = '3em';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.top = '100vh';
+      heart.style.animation = 'floatUp 3s linear';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 3000);
+    }, i * 200);
+  }
+  alert('Sending love to all my amazing friends! 💕');
+}
+
+function showReflection() {
+  const reflections = [
+    "This year was tough, but you made it through. Proud of you!",
+    "Remember the good times and learn from the bad. Growth is key.",
+    "You are stronger than you think. Keep going!",
+    "Friendship like ours is rare. Cherish it.",
+    "2026 is your year. Manifest your dreams!"
+  ];
+  alert(reflections[Math.floor(Math.random() * reflections.length)]);
+}
+
+function megaSurprise() {
+  launchConfetti();
+  launchFireworks();
+  document.body.style.animation = 'zoom 1s infinite';
+  setTimeout(() => document.body.style.animation = '', 5000);
+  for (let i = 0; i < 50; i++) {
+    setTimeout(createFloatingEmoji, i * 50);
+  }
+}
+
+function closeHostingPopup() {
+  document.getElementById('hostingPopup').style.display = 'none';
+}
+
+setTimeout(() => {
+  document.getElementById('hostingPopup').style.display = 'block';
+}, 4000);
+
+function typeWriter(element, text, speed = 50) {
+  let i = 0;
+  element.innerHTML = '';
+  function type() {
+    if (i < text.length) {
+      if (text.charAt(i) === '\n') {
+        element.innerHTML += '<br>';
+      } else {
+        element.innerHTML += text.charAt(i);
+      }
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
+}
+
+function startMiniGame() {
+  document.getElementById('miniGamePopup').style.display = 'block';
+  initGame();
+}
+
+function closeMiniGamePopup() {
+  document.getElementById('miniGamePopup').style.display = 'none';
+  resetGame();
+}
+
+let gameCards = [];
+let flippedCards = [];
+let matchedPairs = 0;
+let moves = 0;
+const emojis = ['🎆', '✨', '🎉', '🎊', '💫', '🌟', '🦄', '🎁'];
+
+function initGame() {
+  gameCards = [...emojis, ...emojis]; // Two of each
+  shuffleArray(gameCards);
+  const board = document.getElementById('gameBoard');
+  board.innerHTML = '';
+  gameCards.forEach((emoji, index) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.dataset.emoji = emoji;
+    card.dataset.index = index;
+    card.addEventListener('click', flipCard);
+    board.appendChild(card);
+  });
+  matchedPairs = 0;
+  moves = 0;
+  flippedCards = [];
+  updateStats();
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
+function flipCard() {
+  if (flippedCards.length < 2 && !this.classList.contains('flipped')) {
+    this.classList.add('flipped');
+    this.textContent = this.dataset.emoji;
+    flippedCards.push(this);
+    if (flippedCards.length === 2) {
+      moves++;
+      updateStats();
+      setTimeout(checkMatch, 1000);
+    }
+  }
+}
+
+function checkMatch() {
+  const [card1, card2] = flippedCards;
+  if (card1.dataset.emoji === card2.dataset.emoji) {
+    card1.classList.add('matched');
+    card2.classList.add('matched');
+    matchedPairs++;
+    if (matchedPairs === 8) {
+      setTimeout(() => {
+        alert('🎉 Congratulations! You matched all pairs! 🎉');
+        launchConfetti();
+      }, 500);
+    }
+  } else {
+    card1.classList.remove('flipped');
+    card1.textContent = '';
+    card2.classList.remove('flipped');
+    card2.textContent = '';
+  }
+  flippedCards = [];
+}
+
+function updateStats() {
+  document.getElementById('moves').textContent = moves;
+  document.getElementById('matches').textContent = matchedPairs;
+}
+
+function resetGame() {
+  // Optional: reset if needed
+}
+
+function showGameInVault() {
+  document.getElementById('message').style.display = 'none';
+  document.getElementById('gameSection').style.display = 'block';
+  initGame();
+}
+
+function backToMessage() {
+  document.getElementById('gameSection').style.display = 'none';
+  document.getElementById('message').style.display = 'block';
+}
+</script>
+</body>
+</html>
+
